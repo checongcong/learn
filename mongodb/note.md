@@ -1,4 +1,5 @@
 
+# Server Operations
 ## Commands for server start/stop
 ```
 # Start server
@@ -24,4 +25,27 @@ mongo --host 127.0.0.1:27017
 ```
 # Config path for mongod
 /etc/mongod.conf
+```
+
+# Database Operations
+## Admin
+```
+# Create an admin user
+db.createUser({
+  user: "username",
+  pwd: "password",
+  roles: ["readWrite", "dbAdmin"]
+  });
+```
+
+## Database-level
+```
+# List all Databases
+show dbs
+
+# (Create and) use a Database
+use helloworld
+
+# See current db
+db
 ```
