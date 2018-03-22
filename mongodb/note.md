@@ -4,6 +4,9 @@
 # Start server
 sudo service mongod start
 
+# Start server (blocking)
+sudo mongod --directoryperdb --dbpath ~/dev/mongodb/data/db --logpath ~/dev/mongodb/log/mongo.log --logappend
+
 # Check the mondbd process has started successfully
 cat /var/log/mongodb/mongod.log | grep "initandlisten"
 
