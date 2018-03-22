@@ -16,3 +16,9 @@ sudo service mongod restart
 # Start mongo shell
 mongo --host 127.0.0.1:27017
 ```
+
+## Configuration
+```
+# Config path for mongod
+/etc/mongod.conf
+```
